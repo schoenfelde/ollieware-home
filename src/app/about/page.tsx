@@ -57,7 +57,7 @@ const timeline = [
 export const metadata: Metadata = {
   title: "About Elliot",
   description:
-    "Get to know Elliot Harry Schoenfeld, the empathetic full-stack consultant behind Ollieware.",
+    "Get to know Elliot, the full-stack consultant behind Ollieware.",
 };
 
 export default function AboutPage() {

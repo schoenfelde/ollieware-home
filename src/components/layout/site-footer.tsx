@@ -34,7 +34,7 @@ export function SiteFooter() {
               </span>
             </div>
             <p className="max-w-md text-sm text-muted-foreground">
-              Elliot Harry Schoenfeld partners with empathetic teams to design,
+              Elliot partners with teams to design,
               build, and ship the software their customers needed yesterday.
               Senior hands-on expertise across web, mobile, and cloud.
             </p>
@@ -94,8 +94,7 @@ export function SiteFooter() {
         <div className="flex flex-col gap-4 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} Ollieware. All rights reserved.</p>
           <p className="sm:text-right">
-            Crafted by Elliot Harry Schoenfeld — empathetic full-stack partner
-            for ambitious teams.
+            Made with ❤️ from Summit
           </p>
         </div>
       </div>

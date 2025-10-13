@@ -17,9 +17,9 @@ const geistMono = Geist_Mono({
 });
 
 const defaultTitle =
-  "Ollieware | Full-stack product consultancy led by Elliot Harry Schoenfeld";
+  "Ollieware | Full-stack Product Consultancy";
 const defaultDescription =
-  "Empathetic senior engineer helping regulated teams ship the software their customers needed yesterday. React, Node, cloud, and mobile expertise — with a free discovery call.";
+  "Senior engineer helping regulated teams ship the software their customers needed yesterday. React, Node, cloud, and mobile expertise — with a free discovery call.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ollieware.com"),
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: defaultTitle,
     description: defaultDescription,
   },
-  authors: [{ name: "Elliot Harry Schoenfeld", url: "https://ollieware.com" }],
+  authors: [{ name: "Elliot Schoenfeld", url: "https://ollieware.com" }],
   keywords: [
     "Ollieware",
     "software consultant",

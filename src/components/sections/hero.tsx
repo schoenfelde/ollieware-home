@@ -29,7 +29,7 @@ export function HeroSection() {
               now.
             </h1>
             <p className="max-w-2xl text-lg text-muted-foreground">
-              I&apos;m Elliot Harry Schoenfeld — the founder of Ollieware. I help
+              I&apos;m Elliot Schoenfeld — the founder of Ollieware. I help
               regulated startups and enterprises ship reliable software fast,
               while keeping customers, compliance, and internal teams delighted.
             </p>
