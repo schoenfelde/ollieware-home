@@ -53,7 +53,7 @@ export const metrics: Metric[] = [
     value: "40+",
     label: "product launches",
     description:
-      "From greenfield MVPs to legacy rescues, delivered on or ahead of schedule with empathy for every stakeholder.",
+      "From greenfield MVPs to legacy rescues, delivered on or ahead of schedule for every stakeholder.",
   },
   {
     value: "6",
@@ -87,7 +87,7 @@ export const services: Service[] = [
   {
     title: "Team leadership & mentorship",
     summary:
-      "Bring calm senior leadership to hybrid teams that need clarity, empathy, and velocity.",
+      "Bring calm senior leadership to hybrid teams that need clarity and velocity.",
     highlights: [
       "Stand up modern SDLC practices: CI, testing, observability, and guardrails.",
       "Mentor engineers across web, mobile, and infrastructure disciplines.",
@@ -167,7 +167,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "He brings empathy to every stakeholder conversation — legal, engineering, executives — and leaves teams more confident than he found them.",
+      "He brings consideration to every stakeholder conversation — legal, engineering, executives — and leaves teams more confident than he found them.",
     name: "Morgan DeWitt",
     role: "Director of Engineering",
     company: "Crescent Fintech",

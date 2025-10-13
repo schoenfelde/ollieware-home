@@ -12,7 +12,7 @@ const steps = [
   {
     title: "Design a confident path",
     description:
-      "Translate empathy into an executable plan: prioritized outcomes, measurable checkpoints, and transparent trade-offs.",
+      "Translate goals into an executable plan: prioritized outcomes, measurable checkpoints, and transparent trade-offs.",
     icon: Handshake,
   },
   {
@@ -38,7 +38,7 @@ export function ApproachSection() {
       <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-            A delivery rhythm built on empathy
+            A rhythm focused on delivery
           </h2>
           <p className="mt-4 text-base text-muted-foreground">
             Elliot combines hands-on engineering with high EQ. The result is a

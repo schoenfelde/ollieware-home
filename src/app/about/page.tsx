@@ -11,7 +11,7 @@ import { Separator } from "@/components/ui/separator";
 
 const values = [
   {
-    title: "Empathy before architecture",
+    title: "Consideration before architecture",
     icon: HeartHandshake,
     description:
       "Great software starts by understanding the humans behind the requirements. I listen first, translate frustrations into journeys, and design solutions that respect every stakeholder.",
@@ -68,7 +68,7 @@ export default function AboutPage() {
           About Ollieware
         </p>
         <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-          Meet Elliot Harry Schoenfeld — product-minded, empathy-led engineer.
+          Meet Elliot, — product-minded, thoughtful, engineer.
         </h1>
         <p className="max-w-3xl text-base text-muted-foreground">
           I&apos;ve spent the past decade guiding cross-functional teams through

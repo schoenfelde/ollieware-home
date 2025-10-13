@@ -25,7 +25,7 @@ export function HeroSection() {
           </div>
           <div className="space-y-4">
             <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-              Empathy-led full-stack consulting for teams that need outcomes
+              Full-stack consulting for teams that need outcomes
               now.
             </h1>
             <p className="max-w-2xl text-lg text-muted-foreground">

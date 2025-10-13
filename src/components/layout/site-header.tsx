@@ -24,12 +24,6 @@ const NAV_ITEMS = [
   { href: "/contact", label: "Contact" },
 ];
 
-const SECONDARY_LINKS = [
-  { href: "/#services", label: "Services" },
-  { href: "/#approach", label: "Approach" },
-  { href: "/#testimonials", label: "Testimonials" },
-];
-
 function ActiveLink({
   href,
   label,
@@ -70,18 +64,10 @@ export function SiteHeader() {
             Ollieware
           </span>
           <span className="text-sm font-medium text-muted-foreground">
-            Full-stack consultancy
+            Your Software Team
           </span>
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
-          {SECONDARY_LINKS.map((item) => (
-            <ActiveLink
-              key={item.href}
-              href={item.href}
-              label={item.label}
-              pathname={pathname}
-            />
-          ))}
           {NAV_ITEMS.map((item) => (
             <ActiveLink
               key={item.href}
@@ -116,7 +102,7 @@ export function SiteHeader() {
                 </SheetTitle>
               </SheetHeader>
               <div className="flex flex-col gap-4">
-                {[...SECONDARY_LINKS, ...NAV_ITEMS].map((item) => (
+                {[...NAV_ITEMS].map((item) => (
                   <SheetClose asChild key={item.href}>
                     <Link
                       href={item.href}
