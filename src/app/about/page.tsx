@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Brain, HeartHandshake, Rocket } from "lucide-react";
 
 import {
@@ -30,6 +31,24 @@ const values = [
   },
 ];
 
+const funFacts = [
+  {
+    title: "Analog Resets",
+    description:
+      "When I'm not behind a computer, you'll traveling the world. Currently I'm hiking the U.S. National Parks and have visited 20/63.",
+  },
+  {
+    title: "Healthy Living",
+    description:
+      "I am an ultramarathoner and love long-distance trail running. Training keeps me energized and focused.",
+  },
+  {
+    title: "Origins of Ollieware",
+    description:
+      "Ollieware is named ofter my 10-year-young mutt, Ollie. She's is my co-pilot and travel companion.",
+  },
+];
+
 
 export const metadata: Metadata = {
   title: "About Elliot",
@@ -58,7 +77,60 @@ export default function AboutPage() {
           weeks, pair with engineers, and stay close to the actual build.
         </p>
       </section>
-      <section className="mt-12 grid gap-8 lg:grid-cols-[1.2fr,0.8fr]">
+      <section className="mt-12 grid gap-8 lg:grid-cols-[1.05fr,0.95fr]">
+        <div className="relative aspect-[4/5] overflow-hidden rounded-[2.5rem] border border-border/60 bg-muted/40 shadow-xl">
+          <Image
+            src="/images/about/elliot-headshot.jpg"
+            alt="Elliot Schoenfeld standing in a sunlit studio."
+            fill
+            className="object-cover"
+            sizes="(max-width: 1024px) 100vw, 480px"
+            priority
+          />
+        </div>
+        <Card className="border border-border/70 bg-card/80 shadow-sm">
+          <CardHeader>
+            <CardTitle className="text-xl font-semibold">
+              A few fun facts
+            </CardTitle>
+            <p className="text-sm text-muted-foreground">
+              The things that keep me energized outside the sprint schedule.
+            </p>
+          </CardHeader>
+          <CardContent>
+            <ul className="space-y-4">
+              {funFacts.map((fact) => (
+                <li
+                  key={fact.title}
+                  className="rounded-2xl border border-border/60 bg-background/70 p-4"
+                >
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
+                    {fact.title}
+                  </p>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    {fact.description}
+                  </p>
+                </li>
+              ))}
+            </ul>
+            <figure className="mt-8 space-y-3">
+              <div className="relative aspect-[5/3] overflow-hidden rounded-3xl border border-border/60 bg-muted/40">
+                <Image
+                  src="/images/about/ollie.jpg"
+                  alt="Ollie, the family vizsla, lounging during a work session."
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 420px"
+                />
+              </div>
+              <figcaption className="text-xs uppercase tracking-[0.18em] text-muted-foreground">
+                Studio mascot: Ollie 🐕
+              </figcaption>
+            </figure>
+          </CardContent>
+        </Card>
+      </section>
+      <section className="mt-16 grid gap-8 lg:grid-cols-[1.2fr,0.8fr]">
         <Card className="border border-border/70 bg-card/80 shadow-sm">
           <CardHeader>
             <CardTitle className="text-xl font-semibold">
