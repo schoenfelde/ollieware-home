@@ -61,7 +61,7 @@ export function CaseStudiesPreview() {
                   {study.summary}
                 </CardDescription>
               </CardHeader>
-              <CardContent className="mt-auto space-y-4 text-sm text-muted-foreground">
+              <CardContent className="flex flex-1 flex-col gap-4 text-sm text-muted-foreground">
                 <ul className="space-y-2">
                   {study.outcomes.map((outcome) => (
                     <li key={outcome} className="flex gap-2">
@@ -70,7 +70,7 @@ export function CaseStudiesPreview() {
                     </li>
                   ))}
                 </ul>
-                <div className="flex flex-wrap items-center gap-2 text-xs uppercase tracking-[0.16em] text-muted-foreground/80">
+                <div className="mt-auto flex flex-wrap items-center gap-2 text-xs uppercase tracking-[0.16em] text-muted-foreground/80">
                   {study.stack.map((item) => (
                     <span key={item} className="rounded-full bg-muted px-3 py-1">
                       {item}
