@@ -33,14 +33,14 @@ const FIELD_CONFIG: FieldConfig[] = [
   {
     name: "name",
     label: "Your name",
-    placeholder: "Elliot Schoenfeld",
+    placeholder: "Jane Doe",
     required: true,
     type: "text",
   },
   {
     name: "email",
     label: "Work email",
-    placeholder: "elliot@ollieware.com",
+    placeholder: "you@acmecorp.com",
     required: true,
     type: "email",
   },
@@ -61,7 +61,7 @@ const FIELD_CONFIG: FieldConfig[] = [
   {
     name: "goal_90_days",
     label: "What outcome do you want in the next 90 days?",
-    placeholder: "Launch patient intake MVP, modernize reporting, etc.",
+    placeholder: "Launch MVP, modernize reporting, etc.",
     required: true,
     type: "textarea",
   },
@@ -92,7 +92,7 @@ const FIELD_CONFIG: FieldConfig[] = [
     name: "constraints",
     label: "Any compliance or integration constraints I should know?",
     placeholder:
-      "List required certifications (HIPAA, SOC2, PCI) or systems we must connect to (Salesforce, Epic, custom APIs...)",
+      "List required certifications or integrations",
     type: "select",
     options: [
       { label: "Healthcare / HIPAA", value: "Healthcare / HIPAA" },
@@ -116,13 +116,6 @@ const FIELD_CONFIG: FieldConfig[] = [
     label: "How did you hear about Ollieware?",
     placeholder: "Referral from ... / LinkedIn / Conference",
     type: "text",
-  },
-  {
-    name: "guests",
-    label: "Additional guests (optional)",
-    description: "Separate multiple emails with commas or line breaks.",
-    placeholder: "product.partner@client.com, engineering.lead@client.com",
-    type: "guests",
   },
 ];
 
@@ -345,13 +338,9 @@ export function DiscoveryCallRequestForm({ className }: { className?: string }) 
           );
         })}
       </div>
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-        <p className="text-xs text-muted-foreground">
-          After you submit you’ll choose a time on Cal.com. No pressure—if
-          there isn’t a fit, you’ll still get a 90-day action plan recap.
-        </p>
+      <div className="flex flex-col flex-1 items-center">
         <Button type="submit" size="lg" disabled={isSubmitting}>
-          {isSubmitting ? "Opening Cal.com..." : "Continue to scheduling"}
+          {isSubmitting ? "Submitting..." : "Continue to scheduling"}
         </Button>
       </div>
     </form>

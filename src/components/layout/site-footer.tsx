@@ -13,10 +13,11 @@ const quickLinks = [
 ];
 
 const specialties = [
+  "Design AI systems relevant to your business",
+  "Product-minded CTO + Lead Engineer + Head of Product who keeps discovery and delivery in sync",
   "Healthcare & HIPAA-compliant apps",
   "Fintech & payments",
   "DevOps & infrastructure as code",
-  "Design systems & DX",
 ];
 
 export function SiteFooter() {
@@ -34,7 +35,7 @@ export function SiteFooter() {
               </span>
             </div>
             <p className="max-w-md text-sm text-muted-foreground">
-              Elliot partners with teams to design,
+              We partner with teams to design,
               build, and ship the software their customers needed yesterday.
               Senior hands-on expertise across web, mobile, and cloud.
             </p>
@@ -59,7 +60,7 @@ export function SiteFooter() {
               </div>
               <div className="flex items-center gap-2 text-muted-foreground">
                 <MapPin className="h-4 w-4" aria-hidden />
-                <span>Based in Florida · Remote friendly</span>
+                <span>Based in the USA · Remote friendly</span>
               </div>
             </div>
           </div>

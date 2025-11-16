@@ -14,7 +14,6 @@ export type CaseStudy = {
   title: string;
   client: string;
   industry: string;
-  year: string;
   summary: string;
   outcomes: string[];
   stack: string[];
@@ -57,9 +56,9 @@ export const metrics: Metric[] = [
   },
   {
     value: "6",
-    label: "cross-functional teams led",
+    label: "critical launches rescued and delivered",
     description:
-      "Guiding engineers, designers, PMs, and compliance experts toward outcomes that delight customers.",
+      "Guiding engineers, designers, and stakeholders through high-stakes releases without sacrificing quality.",
   },
 ];
 
@@ -67,7 +66,7 @@ export const services: Service[] = [
   {
     title: "Full-stack product acceleration",
     summary:
-      "Own the roadmap from discovery through production, filling gaps across product, design systems, and delivery.",
+      "Get a working v1 in weeks, not quarters — from discovery to deployed app — with one partner owning the roadmap and the build.",
     highlights: [
       "Translate fuzzy ideas into working software in weeks, not quarters.",
       "Pair closely with designers to ship pixel-perfect, accessible interfaces.",
@@ -77,7 +76,7 @@ export const services: Service[] = [
   {
     title: "Legacy modernization & rescue",
     summary:
-      "Stabilize fragile systems and deliver the features your customers needed yesterday.",
+      "Stabilize fragile systems fast so you can ship the features your customers needed yesterday without risking uptime.",
     highlights: [
       "Audit current architecture and build a plan your stakeholders can trust.",
       "Untangle debt while keeping critical systems online and compliant.",
@@ -87,7 +86,7 @@ export const services: Service[] = [
   {
     title: "Team leadership & mentorship",
     summary:
-      "Bring calm senior leadership to hybrid teams that need clarity and velocity.",
+      "Help your hybrid teams ship consistently by adding calm senior leadership where it&apos;s missing.",
     highlights: [
       "Stand up modern SDLC practices: CI, testing, observability, and guardrails.",
       "Mentor engineers across web, mobile, and infrastructure disciplines.",
@@ -97,7 +96,7 @@ export const services: Service[] = [
   {
     title: "Platform & integration architecture",
     summary:
-      "Design integrations that respect sensitive data and scale with your business.",
+      "Ship integrations that respect sensitive data and scale with your business instead of fragile one-off hacks.",
     highlights: [
       "Build secure, compliant data flows with HIPAA, PCI, and SOC considerations.",
       "Wrangle legacy partner APIs and deliver clean abstractions to your teams.",
@@ -108,47 +107,76 @@ export const services: Service[] = [
 
 export const caseStudies: CaseStudy[] = [
   {
+    title: "Logging MVP rebrand ships on time and under budget",
+    client: "Mid-market transportation startup",
+    industry: "Transportation & logistics",
+    summary:
+      "Turned a partially built logistics tool into a production-ready, multi-tenant SaaS that gets timber loads from forest to mill with real-time visibility.",
+    outcomes: [
+      "Shipped the rebranded multi-tenant SaaS on schedule, turning a half-built prototype into a tool dispatch teams actually use every day.",
+      "Authored the multi-tenant implementation plan, API docs, and service contracts that cut through scope noise and kept a three-team delivery on track.",
+      "Containerized the Next.js web client, Express/Mongo API, and React admin into a reproducible Docker/ECS pipeline with SOC-ready environment automation.",
+      "Unlocked driver adoption by designing the Flutter mobile app API: on-duty toggles, load lifecycle, GPS tracking, push notifications, and chat.",
+    ],
+    stack: [
+      "Next.js 14",
+      "Express.js",
+      "MongoDB",
+      "Socket.io",
+      "Flutter",
+      "Docker/ECS",
+    ],
+  },
+  {
     title: "CORE design system unlocks design-development parity",
     client: "Series B health-tech startup",
     industry: "Healthcare",
-    year: "2023",
     summary:
-      "Bootstrapped a React component library that empowered teams to ship consistent UI without designer bottlenecks.",
+      "Productized the company’s visual language into CORE — a typed React/Tailwind system that lets any squad drop in accessible, brand-ready UI without rebuilding primitives.",
     outcomes: [
-      "Cut time-to-MVP from months to weeks across three internal product lines.",
-      "Established automated visual regression pipelines for safe iteration.",
-      "Delivered exhaustive documentation and workshops that upskilled every squad.",
+      "Enabled every product squad to ship on-brand, accessible UI faster with a shared React/Tailwind design system.",
+      "Shipped 40+ audited atoms/molecules/organisms (from TanStack-powered data grids to Stripe-ready payment forms) with theme tokens, dark mode, and Tailwind presets that covered every product surface.",
+      "Activated semantic-release, Chromatic visual diffs, Vitest/Cypress suites, and Storybook 8 docs so every npm publish came with screenshots, type defs, and CI evidence.",
+      "Delivered consumer templates (Remix, serverless Express, CRA) plus brown-bag sessions that cut handoff cycles in half for design and feature squads.",
     ],
     stack: [
-      "React",
+      "React 18",
       "TypeScript",
-      "Storybook",
-      "CI/CD",
-      "Design tokens",
+      "Tailwind CSS & Styled Components",
+      "Storybook 8 & Chromatic",
+      "TanStack Table",
+      "Vitest / Cypress / semantic-release",
     ],
   },
   {
     title: "Patient records portal earns the trust of the nation’s largest firm",
     client: "AmLaw 10 law firm",
     industry: "Legal",
-    year: "2022",
     summary:
-      "Replatformed legacy data into a serverless React experience, enabling secure collaboration with medical partners.",
+      "Built the secure bridge between litigators, providers, and an internal fulfillment desk—pairing a React portal with a serverless Node/API tier so medical record pulls stop depending on email chains.",
     outcomes: [
-      "Migrated years of protected data with zero downtime or compliance incidents.",
-      "Wrapped brittle partner APIs with resilient, observable integration layers.",
-      "Launched on schedule while coaching the client’s internal team on cloud operations.",
+      "Gave litigators and staff a single, secure place to manage medical record pulls without email or spreadsheet chaos.",
+      "Designed the end-to-end workflow: request intake, provider search, tracked submissions, and pre-signed uploads that land straight in the firm’s case-management platform without exposing PHI.",
+      "Delivered a Postgres/TypeORM schema plus admin ops endpoints for migrations, ETL, and bulk sync so legacy matters could be brought forward with zero downtime.",
+      "Codified AWS infrastructure with Pulumi and GitHub Actions, giving legal IT a reproducible Lambda/S3/RDS footprint and SOC-II ready audit trails.",
     ],
-    stack: ["React", "Node.js", "AWS Lambda", "DynamoDB", "Terraform"],
+    stack: [
+      "React",
+      "Node.js / Express",
+      "Postgres",
+      "Auth0",
+      "AWS Lambda & S3",
+      "Pulumi",
+    ],
   },
   {
     title: "Mobile banking refresh ships on time with a 3x team scale-up",
     client: "Fintech scale-up",
     industry: "Fintech",
-    year: "2021",
     summary:
       "Guided an underestimated rewrite, scaling engineering from 2 to 6 devs while delivering a compliant mobile app overhaul.",
     outcomes: [
+      "Launched the mobile banking refresh on time while scaling the engineering team 3x and maintaining compliance.",
       "Met an eight-week release deadline without sacrificing accessibility or compliance.",
       "Stood up TDD practices that reduced production defects by 45%.",
       "Mentored new hires across Android, iOS, and React Native for sustainable velocity.",
@@ -158,99 +186,22 @@ export const caseStudies: CaseStudy[] = [
 ];
 
 export const testimonials: Testimonial[] = [
-  {
-    quote:
-      "Elliot is the rare consultant who listens first, translates chaos into a roadmap, and then quietly ships the thing everyone else said was impossible.",
-    name: "Sasha Patel",
-    role: "VP of Product",
-    company: "Helios Health",
-  },
-  {
-    quote:
-      "He brings consideration to every stakeholder conversation — legal, engineering, executives — and leaves teams more confident than he found them.",
-    name: "Morgan DeWitt",
-    role: "Director of Engineering",
-    company: "Crescent Fintech",
-  },
-  {
-    quote:
-      "Our partners called out the craftsmanship and polish immediately. Elliot’s ability to mentor while delivering was the force multiplier we needed.",
-    name: "Dana Lee",
-    role: "COO",
-    company: "Cobalt Legal Group",
-  },
+  // {
+  //   quote:
+  //     "Elliot is the rare consultant who listens first, translates chaos into a roadmap, and then quietly ships the thing everyone else said was impossible.",
+  //   name: "Sasha Patel",
+  //   role: "VP of Product",
+  //   company: "Helios Health",
+  // },
 ];
 
 export const blogPosts: BlogPost[] = [
-  {
-    slug: "the-empathy-advantage",
-    title: "The Empathy Advantage in Shipping Software Fast",
-    description:
-      "Why listening harder — to users, stakeholders, and engineers — is the fastest path to production.",
-    date: "2024-09-18",
-    readTime: "6 min read",
-    tags: ["consulting", "delivery", "leadership"],
-    blocks: [
-      {
-        type: "paragraph",
-        text: "Speed is not a synonym for pressure. The teams that ship the fastest are the ones that feel the most understood. Empathy surfaces the real constraints so we can solve the right problem the first time.",
-      },
-      {
-        type: "heading",
-        level: 3,
-        text: "Listen past the backlog",
-      },
-      {
-        type: "paragraph",
-        text: "When I join a new engagement, my first meetings are with the people closest to the customer pain. I map frustrations, regulatory guardrails, and desired outcomes. That map becomes the blueprint for the first milestone.",
-      },
-      {
-        type: "list",
-        items: [
-          "Shadow frontline teammates to understand real-world workflows.",
-          "Translate regulatory constraints into actionable technical requirements.",
-          "Surface hidden dependencies before they blow up the timeline.",
-        ],
-      },
-      {
-        type: "paragraph",
-        text: "Once everyone feels heard, the pace picks up naturally. Meetings shrink, decisions stick, and we can measure progress in days instead of quarters.",
-      },
-    ],
-  },
-  {
-    slug: "secure-delivery-in-complex-industries",
-    title: "Shipping Sensitive Apps Without Losing Momentum",
-    description:
-      "Practical guardrails I lean on to keep healthcare, fintech, and legal products both compliant and fast.",
-    date: "2024-07-10",
-    readTime: "7 min read",
-    tags: ["security", "healthcare", "fintech"],
-    blocks: [
-      {
-        type: "paragraph",
-        text: "Building in regulated spaces is a balancing act. The trick is to automate the boring compliance steps so the team can focus on user value.",
-      },
-      {
-        type: "list",
-        items: [
-          "Codify infrastructure and policies so environments are reproducible.",
-          "Automate dependency and security scanning from day one.",
-          "Invest in observability — auditors love dashboards as much as engineers.",
-        ],
-      },
-      {
-        type: "paragraph",
-        text: "With the guardrails in place, the product conversation can stay anchored to outcomes, not paperwork.",
-      },
-    ],
-  },
   {
     slug: "your-free-discovery-call",
     title: "What We’ll Cover in Your Free Discovery Call",
     description:
       "A quick guide to the conversation we’ll have when we first connect — zero obligation, 100% focused on clarity.",
-    date: "2024-05-21",
+    date: "2025-06-01",
     readTime: "4 min read",
     tags: ["consulting", "process"],
     blocks: [

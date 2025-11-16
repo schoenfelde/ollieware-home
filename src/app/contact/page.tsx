@@ -8,8 +8,8 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 
-import { DiscoveryCallRequestForm } from "@/components/discovery-call-request-form";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const metadata: Metadata = {
@@ -26,15 +26,14 @@ export default function ContactPage() {
           Free 30-minute discovery call
         </Badge>
         <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-          Book time with Elliot Schoenfeld.
+          Book a 30-minute working session.
         </h1>
         <p className="max-w-2xl text-base text-muted-foreground">
-          Pick a slot to walk through your goals, constraints, and timeline with
-          the founder of Ollieware. You&apos;ll leave with an honest read on
+          Pick a slot to walk through your goals, constraints, and timeline. You&apos;ll leave with an honest read on
           feasibility plus the first steps toward delivery.
         </p>
       </header>
-      <div className="mt-12 grid gap-10 lg:grid-cols-[minmax(0,1.2fr),minmax(0,1fr)]">
+      <div className="mt-12 grid gap-10 lg:grid-cols-[minmax(0,1.3fr),minmax(0,0.9fr)]">
         <div className="space-y-10">
           <section className="space-y-6 rounded-2xl border border-border/70 bg-card/80 p-8 shadow-sm">
             <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.15em] text-primary">
@@ -48,27 +47,43 @@ export default function ContactPage() {
               I&apos;ve spent 10+ years shipping regulated healthcare, fintech,
               and legal software. This call is where we map your critical path,
               outline risk, and confirm whether Ollieware is the right fit.
+              We start with the business challenge first, then decide which
+              technology moves actually matter.
             </p>
             <ul className="space-y-4 text-sm text-muted-foreground">
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="mt-0.5 h-5 w-5 text-primary" aria-hidden />
+                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" aria-hidden />
                 <span>
                   Walk away with a sequenced action plan, even if we don&apos;t end up working together.
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="mt-0.5 h-5 w-5 text-primary" aria-hidden />
+                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" aria-hidden />
                 <span>
-                  Talk directly with the engineer who will deliver your project — no handoffs or sales scripts.
+                  Talk directly with the operator who is simultaneously your CTO, Lead Engineer, and Head of Product — no handoffs or sales scripts.
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="mt-0.5 h-5 w-5 text-primary" aria-hidden />
+                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" aria-hidden />
                 <span>
                   Get scheduling certainty: once you pick a slot, the meeting is confirmed and an invite is sent immediately.
                 </span>
               </li>
             </ul>
+            <div className="flex flex-wrap items-center gap-4 pt-2">
+              <Button asChild size="lg" className="min-w-[230px]">
+                <Link
+                  href="https://cal.com/ollieware/discovery-call"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Book your free discovery call
+                </Link>
+              </Button>
+              <p className="text-xs text-muted-foreground">
+                Opens Cal.com in a new tab. 30-minute Google Meet.
+              </p>
+            </div>
           </section>
           <Card className="border border-border/70 bg-card/80 shadow-sm">
             <CardHeader className="space-y-3">
@@ -124,8 +139,68 @@ export default function ContactPage() {
             </CardContent>
           </Card>
         </div>
-        <div className="lg:pl-4">
-          <DiscoveryCallRequestForm />
+        <div className="space-y-6 lg:pl-4">
+          <Card className="border border-border/70 bg-card/90 shadow-lg">
+            <CardHeader className="space-y-2">
+              <CardTitle className="text-xl font-semibold">
+                Ready when you are
+              </CardTitle>
+              <p className="text-sm text-muted-foreground">
+                Skip the intake form and go straight to the calendar. Grab a slot that works for you and bring your top priorities.
+              </p>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <dl className="grid grid-cols-1 gap-4 text-sm text-muted-foreground">
+                <div>
+                  <dt className="font-medium text-foreground">Duration</dt>
+                  <dd>30 minutes (Google Meet)</dd>
+                </div>
+                <div>
+                  <dt className="font-medium text-foreground">Focus</dt>
+                  <dd>Goals, constraints, current build, and near-term roadmap.</dd>
+                </div>
+                <div>
+                  <dt className="font-medium text-foreground">Follow-up</dt>
+                  <dd>Receive a written recap with the sequence of next steps within 48 hours.</dd>
+                </div>
+              </dl>
+              <Button asChild size="lg" className="w-full">
+                <Link
+                  href="https://cal.com/ollieware/discovery-call"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Go to calendar
+                </Link>
+              </Button>
+            </CardContent>
+          </Card>
+          <Card className="border border-border/70 bg-card/80 shadow-sm">
+            <CardHeader className="space-y-2">
+              <CardTitle className="text-lg font-semibold">
+                Bring these details
+              </CardTitle>
+              <p className="text-sm text-muted-foreground">
+                Having a few bullets ready helps us jump right into decision-making.
+              </p>
+            </CardHeader>
+            <CardContent>
+              <ul className="space-y-3 text-sm text-muted-foreground">
+                <li className="flex gap-2">
+                  <CheckCircle2 className="mt-0.5 h-4 w-4 text-primary" aria-hidden />
+                  Critical outcomes for the next 90 days.
+                </li>
+                <li className="flex gap-2">
+                  <CheckCircle2 className="mt-0.5 h-4 w-4 text-primary" aria-hidden />
+                  Known constraints (compliance, integrations, hiring freeze, etc.).
+                </li>
+                <li className="flex gap-2">
+                  <CheckCircle2 className="mt-0.5 h-4 w-4 text-primary" aria-hidden />
+                  Links to anything you want reviewed: decks, demos, repos.
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </div>

@@ -25,13 +25,14 @@ export function HeroSection() {
           </div>
           <div className="space-y-4">
             <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-              Full-stack consulting for teams that need outcomes
-              now.
+              Hands-on product execution that turns your ideas into working
+              software.
             </h1>
             <p className="max-w-2xl text-lg text-muted-foreground">
-              I&apos;m Elliot Schoenfeld — the founder of Ollieware. I help
-              regulated startups and enterprises ship reliable software fast,
-              while keeping customers, compliance, and internal teams delighted.
+              I&apos;m Elliot Schoenfeld, the founder of Ollieware. I design,
+              build, and ship production-ready software across web, mobile, and
+              cloud — from new apps and websites to infrastructure upgrades —
+              while handling product and stakeholder alignment along the way.
             </p>
           </div>
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
@@ -50,7 +51,7 @@ export function HeroSection() {
               Guaranteed constructive call.
             </span>{" "}
             We’ll map your next 90 days and you’ll leave with a plan —
-            regardless of fit.
+            regardless of fit. No sales scripts, no pressure.
           </p>
         </div>
         <div className="flex flex-col justify-between gap-10 rounded-3xl border border-border/60 bg-card/70 p-8 shadow-lg shadow-primary/5 backdrop-blur">
@@ -60,6 +61,10 @@ export function HeroSection() {
             </h2>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li>
+                ➤ Rolling up my sleeves in the codebase: architecture,
+                implementation, and debugging across web, mobile, and cloud.
+              </li>
+              <li>
                 ➤ Translating murky requirements into software people love to
                 use.
               </li>
@@ -67,9 +72,7 @@ export function HeroSection() {
                 ➤ Shipping secure experiences in healthcare, fintech, and legal
                 without slowing down.
               </li>
-              <li>
-                ➤ Coaching in-house teams so the wins keep compounding.
-              </li>
+              <li>➤ Coaching in-house teams so the wins keep compounding.</li>
             </ul>
           </div>
           <div className="space-y-2 rounded-2xl border border-dashed border-primary/40 p-6">

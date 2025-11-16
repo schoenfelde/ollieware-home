@@ -19,8 +19,9 @@ export function ServicesSection() {
             What we build together
           </h2>
           <p className="mt-4 text-base text-muted-foreground">
-            Whether you need an MVP in six weeks, a legacy rescue, or senior
-            leadership to calm the chaos, Ollieware meets you where you are.
+            Whether you need an MVP in six weeks, a legacy rescue, or a senior
+            builder to get into the code and ship, Ollieware meets you where
+            you are.
           </p>
         </div>
         <div className="mt-12 grid gap-6 md:grid-cols-2">

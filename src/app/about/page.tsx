@@ -30,34 +30,11 @@ const values = [
   },
 ];
 
-const timeline = [
-  {
-    year: "2015 – 2018",
-    company: "Norfolk Southern",
-    role: "Software Engineer",
-    summary:
-      "Led an 8-person team modernizing rail operations software. Introduced mobile tooling that brought 3,000+ conductors onto a unified workflow.",
-  },
-  {
-    year: "2018 – 2019",
-    company: "Accenture Emerging Technology",
-    role: "Lead Engineer",
-    summary:
-      "Guided a hybrid team of ten building a React and Node.js order management platform on Kubernetes. Launched rapid prototypes and codified DevOps accelerators.",
-  },
-  {
-    year: "2019 – Present",
-    company: "Ollieware",
-    role: "Principal Consultant & Founder",
-    summary:
-      "Partnered with healthcare, fintech, and legal teams to ship design systems, mobile apps, and serverless platforms under tight deadlines and strict compliance.",
-  },
-];
 
 export const metadata: Metadata = {
   title: "About Elliot",
   description:
-    "Get to know Elliot, the full-stack consultant behind Ollieware.",
+    "Get to know me.",
 };
 
 export default function AboutPage() {
@@ -68,14 +45,17 @@ export default function AboutPage() {
           About Ollieware
         </p>
         <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-          Meet Elliot, — product-minded, thoughtful, engineer.
+          Meet Elliot, the hands-on engineer who also covers CTO and product leadership when you need it.
         </h1>
         <p className="max-w-3xl text-base text-muted-foreground">
-          I&apos;ve spent the past decade guiding cross-functional teams through
-          hairy moments: HIPAA audits, fintech deadlines, legacy rewrites,
-          mobile refactors, and everything in between. I thrive when the stakes
-          are high and teams need a calm partner who can lead both conversations
-          and commits.
+          I&apos;ve spent the past decade parachuting into cross-functional
+          teams when outcomes matter most: getting AI features from prototype to
+          production, taming legacy rewrites, unblocking mobile refactors, and
+          turning blank-slate visions into revenue. I show up as a senior
+          builder who can also step into the CTO or Head of Product seat —
+          aligning the business case, the user journey, and the delivery plan
+          so every initiative earns trust quickly. I still write code most
+          weeks, pair with engineers, and stay close to the actual build.
         </p>
       </section>
       <section className="mt-12 grid gap-8 lg:grid-cols-[1.2fr,0.8fr]">
@@ -90,7 +70,8 @@ export default function AboutPage() {
               I operate as a force multiplier — filling gaps between product,
               design, engineering, and leadership. Some days I&apos;m pair
               programming on a React feature. Others I&apos;m facilitating
-              cross-team decisions or mentoring rising engineers.
+              cross-team decisions or mentoring rising engineers, always tying
+              the technical plan back to the business outcome we&apos;re chasing.
             </p>
             <p>
               My north star is always the same: deliver business value fast
@@ -118,26 +99,27 @@ export default function AboutPage() {
           <CardContent className="space-y-3 text-sm text-muted-foreground">
             <p>
               <span className="font-semibold text-foreground">Location:</span>{" "}
-              Florida (supporting clients across the U.S.)
-            </p>
-            <p>
-              <span className="font-semibold text-foreground">
-                Previous teams:
-              </span>{" "}
-              Norfolk Southern, Accenture Emerging Technology
-            </p>
-            <p>
-              <span className="font-semibold text-foreground">
-                Specialty:
-              </span>{" "}
-              Accelerating delivery for regulated industries without burning out
-              teams.
+              Based in the USA · Remote friendly
             </p>
             <p>
               <span className="font-semibold text-foreground">
                 Motto:
               </span>{" "}
               “Ship fast, listen faster.”
+            </p>
+            <p>
+              <span className="font-semibold text-foreground">AI focus:</span>{" "}
+              Leading teams through AI-native product decisions, from model
+              selection to safety reviews.
+            </p>
+            <p>
+              <span className="font-semibold text-foreground">Speed:</span>{" "}
+              Quick wins in the first 2–4 weeks so momentum never stalls.
+            </p>
+            <p>
+              <span className="font-semibold text-foreground">Product lens:</span>{" "}
+              Every sprint ties shipping checklists to user outcomes and clear
+              business signals.
             </p>
           </CardContent>
         </Card>
@@ -168,27 +150,6 @@ export default function AboutPage() {
               </Card>
             );
           })}
-        </div>
-      </section>
-      <section className="mt-16 space-y-8">
-        <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-          Career timeline
-        </h2>
-        <div className="relative space-y-10 border-l border-border/70 pl-6">
-          {timeline.map((entry) => (
-            <div key={entry.year} className="relative">
-              <span className="absolute -left-[29px] top-0 flex h-4 w-4 items-center justify-center rounded-full bg-primary" />
-              <p className="text-xs uppercase tracking-[0.16em] text-primary/80">
-                {entry.year}
-              </p>
-              <h3 className="mt-2 text-lg font-semibold text-foreground">
-                {entry.company} · {entry.role}
-              </h3>
-              <p className="mt-2 text-sm text-muted-foreground">
-                {entry.summary}
-              </p>
-            </div>
-          ))}
         </div>
       </section>
     </div>

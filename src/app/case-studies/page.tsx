@@ -26,10 +26,10 @@ export default function CaseStudiesPage() {
           Client outcomes
         </p>
         <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-          Partnerships that shipped on time — with trust intact.
+          Partnerships that shipped on time and on budget.
         </h1>
         <p className="max-w-3xl text-base text-muted-foreground">
-          Every engagement starts by listening deeply. Together we navigate
+          Every engagement starts with targeted discovery. Together we navigate
           regulatory, technical, and human constraints to deliver software that
           stands up to scrutiny and keeps teams energized.
         </p>
@@ -42,7 +42,7 @@ export default function CaseStudiesPage() {
           >
             <CardHeader className="space-y-2 border-b border-border/60 bg-muted/30 p-6">
               <p className="text-xs uppercase tracking-[0.16em] text-muted-foreground">
-                {study.year} · {study.industry}
+                {study.industry} · {study.client}
               </p>
               <CardTitle className="text-2xl font-semibold text-foreground">
                 {study.title}
@@ -66,17 +66,6 @@ export default function CaseStudiesPage() {
                     ))}
                   </ul>
                 </div>
-                <Separator />
-                <div className="space-y-3">
-                  <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-muted-foreground/80">
-                    My role
-                  </h3>
-                  <p>
-                    Principal consultant, partnering directly with {study.client}
-                    {" "} to steer delivery, mentor teams, and keep executives confident
-                    in progress.
-                  </p>
-                </div>
               </div>
               <div className="space-y-4 rounded-2xl border border-dashed border-primary/40 bg-primary/5 p-5 text-sm">
                 <p className="text-xs uppercase tracking-[0.18em] text-primary/80">
@@ -99,7 +88,7 @@ export default function CaseStudiesPage() {
                     href="/contact"
                     className="inline-flex items-center gap-2 font-semibold text-primary transition hover:text-primary/80"
                   >
-                    Schedule your free discovery call
+                    Book your free discovery call
                     <ArrowRight className="h-4 w-4" aria-hidden />
                   </Link>
                 </div>

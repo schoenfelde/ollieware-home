@@ -32,7 +32,7 @@ export default function BlogIndexPage() {
           Ollieware Insights
         </p>
         <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-          Notes from 10+ years of empathetic delivery.
+          Notes from 10+ years of delivery.
         </h1>
         <p className="max-w-3xl text-base text-muted-foreground">
           Field-tested practices for building software that stands up to audits

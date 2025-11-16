@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 const defaultTitle =
   "Ollieware | Full-stack Product Consultancy";
 const defaultDescription =
-  "Senior engineer helping regulated teams ship the software their customers needed yesterday. React, Node, cloud, and mobile expertise — with a free discovery call.";
+  "Fractional CTO, Lead Engineer, and Head of Product in one partner — helping regulated teams apply technology to their most urgent business challenges.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ollieware.com"),
@@ -50,7 +50,9 @@ export const metadata: Metadata = {
     "TypeScript",
     "healthcare software",
     "fintech",
-    "full-stack engineer",
+    "fractional CTO",
+    "lead engineer",
+    "head of product",
     "design systems",
   ],
 };

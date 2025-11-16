@@ -105,14 +105,14 @@ export default function BlogPostPage({ params }: BlogPageProps) {
           Ready to turn these ideas into action?
         </p>
         <p className="mt-2">
-          Schedule a free discovery call — we&apos;ll unpack your goals and map
+          Book your free discovery call — we&apos;ll unpack your goals and map
           the fastest path to impact.
         </p>
         <Link
           href="/contact"
           className="mt-4 inline-flex items-center gap-2 font-semibold text-primary transition hover:text-primary/80"
         >
-          Book the call
+          Book your free discovery call
           <CalendarCheck className="h-4 w-4" aria-hidden />
         </Link>
       </footer>

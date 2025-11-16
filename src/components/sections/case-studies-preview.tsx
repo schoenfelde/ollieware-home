@@ -51,7 +51,7 @@ export function CaseStudiesPreview() {
                     {study.industry}
                   </Badge>
                   <span className="text-xs text-muted-foreground">
-                    {study.year} · {study.client}
+                    {study.client}
                   </span>
                 </div>
                 <CardTitle className="text-xl font-semibold">

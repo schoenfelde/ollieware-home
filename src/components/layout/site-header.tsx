@@ -64,7 +64,7 @@ export function SiteHeader() {
             Ollieware
           </span>
           <span className="text-sm font-medium text-muted-foreground">
-            Your Software Team
+            Designing, building, and shipping software right.
           </span>
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
@@ -98,7 +98,7 @@ export function SiteHeader() {
             <SheetContent side="right" className="w-80">
               <SheetHeader className="mb-6 text-left">
                 <SheetTitle className="text-lg font-semibold">
-                  Navigate Ollieware
+                  Let's Build Something Great
                 </SheetTitle>
               </SheetHeader>
               <div className="flex flex-col gap-4">
