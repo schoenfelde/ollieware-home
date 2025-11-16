@@ -98,7 +98,7 @@ export function SiteHeader() {
             <SheetContent side="right" className="w-80">
               <SheetHeader className="mb-6 text-left">
                 <SheetTitle className="text-lg font-semibold">
-                  Let's Build Something Great
+                  Let&rsquo;s Build Something Great
                 </SheetTitle>
               </SheetHeader>
               <div className="flex flex-col gap-4">
